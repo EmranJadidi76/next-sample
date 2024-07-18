@@ -79,7 +79,7 @@ function QuickView() {
               <div>
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1">
-                    <AccordionTrigger className="text-sm font-semibold">
+                    <AccordionTrigger className="text-sm text-gray-600 font-semibold">
                       Descriptions
                     </AccordionTrigger>
                     <AccordionContent>
@@ -91,7 +91,7 @@ function QuickView() {
                   </AccordionItem>
 
                   <AccordionItem value="item-2">
-                    <AccordionTrigger className="text-sm font-semibold">
+                    <AccordionTrigger className="text-sm text-gray-600 font-semibold">
                       Materials
                     </AccordionTrigger>
                     <AccordionContent>
@@ -101,7 +101,7 @@ function QuickView() {
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="item-3">
-                    <AccordionTrigger className="text-sm font-semibold">
+                    <AccordionTrigger className="text-sm text-gray-600 font-semibold">
                       Care Guid
                     </AccordionTrigger>
                     <AccordionContent>
