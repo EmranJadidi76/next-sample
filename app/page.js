@@ -5,7 +5,7 @@ import { HeartIcon, EyeIcon } from "@heroicons/react/24/outline";
 export default function Home() {
   return (
     <main>
-      <div className="p-6">
+      <div className="p-6 bg-gray-50">
         <div className="grid grid-cols-4 gap-2">
           {[
             "p1.jpg",
@@ -52,11 +52,17 @@ export default function Home() {
                   <div className="rounded-full w-2 h-2 bg-green-500"></div>
                   <div className="rounded-full w-2 h-2 bg-blue-500"></div>
                 </div>
+
+                <button className="w-full py-2 mt-4 text-center bg-black rounded-md">
+                  <h4 className="text-white text-xs">Add To Card</h4>
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <QuickView />
     </main>
   );
 }
