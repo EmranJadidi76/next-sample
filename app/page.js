@@ -1,6 +1,16 @@
 import QuickView from "@/components/products/quick-view";
 import Image from "next/image";
 import { HeartIcon, EyeIcon } from "@heroicons/react/24/outline";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -38,7 +48,19 @@ export default function Home() {
                   </div>
 
                   <div className="absolute top-2 left-2 cursor-pointer">
-                    <EyeIcon aria-hidden="true" className="h-6 w-6" />
+                    <div className="absolute top-2 left-2 cursor-pointer">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <EyeIcon aria-hidden="true" className="h-6 w-6" />
+                        </DialogTrigger>
+                        <DialogContent className="sm:max-w-[700px]">
+                          <DialogHeader>
+                            <DialogTitle> Slim Fit Waffled Polo Shirt</DialogTitle>
+                          </DialogHeader>
+                          <QuickView />
+                        </DialogContent>
+                      </Dialog>
+                    </div>
                   </div>
                 </div>
                 <h2 className="text-xs text-gray-600 font-semibold mt-4">
@@ -62,7 +84,17 @@ export default function Home() {
         </div>
       </div>
 
-      <QuickView />
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button variant="outline">QuickView</Button>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[800px]">
+          <DialogHeader>
+            <DialogTitle>QuickView</DialogTitle>
+          </DialogHeader>
+          <QuickView />
+        </DialogContent>
+      </Dialog>
     </main>
   );
 }
