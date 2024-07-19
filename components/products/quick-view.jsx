@@ -15,7 +15,7 @@ import {
 function QuickView() {
   return (
     <div className="flex justify-center my-5">
-        <div className="card w-full border-2 border-gray-200 flex columns-2 shadow-md  rounded-md">
+        <div className="card w-full border-2 border-gray-100 flex columns-2 shadow-sm  rounded-md">
           <div className="flex space-x-4 w-full p-4">
             <Image
               src="/assets/images/hmgoepprod.png"
