@@ -56,22 +56,20 @@ export default function Home() {
                     </div>
 
                     <div className="absolute top-2 left-2 cursor-pointer">
-                      <div className="absolute top-2 left-2 cursor-pointer">
-                        <Dialog>
-                          <DialogTrigger asChild>
-                            <EyeIcon aria-hidden="true" className="h-6 w-6" />
-                          </DialogTrigger>
-                          <DialogContent className="sm:max-w-[700px]">
-                            <DialogHeader>
-                              <DialogTitle>
-                                {" "}
-                                Slim Fit Waffled Polo Shirt
-                              </DialogTitle>
-                            </DialogHeader>
-                            <QuickView />
-                          </DialogContent>
-                        </Dialog>
-                      </div>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <EyeIcon aria-hidden="true" className="h-6 w-6" />
+                        </DialogTrigger>
+                        <DialogContent className="sm:max-w-[700px]">
+                          <DialogHeader>
+                            <DialogTitle>
+                              {" "}
+                              Slim Fit Waffled Polo Shirt
+                            </DialogTitle>
+                          </DialogHeader>
+                          <QuickView />
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </div>
                   <div className="px-2">
