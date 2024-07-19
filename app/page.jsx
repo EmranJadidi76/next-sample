@@ -63,7 +63,6 @@ export default function Home() {
                         <DialogContent className="sm:max-w-[700px]">
                           <DialogHeader>
                             <DialogTitle>
-                              {" "}
                               Slim Fit Waffled Polo Shirt
                             </DialogTitle>
                           </DialogHeader>
